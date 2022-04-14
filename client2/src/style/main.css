@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.into_row a{
+    color: white !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.into_row a:after {
+	display: block;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #00a650; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+div.into_row a:hover:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.active{
+    display: block;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 100%;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #00a650; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.separator{
+  width: 100px;
+  display: inline-block;  
+}
+
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    display: block;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.hat{
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+
+.into_row{
+    display: inline-block;
+    margin: 15px;
+    font-size: 2em;
+}
+
+.container{
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.input-file{
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+}
+
+.uploud-file{
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 330px;
+    background: #24243e;
+    cursor: pointer;
+    border-radius: 6%;
+}
+
+
+.err-text{
+    color: red;
+}
+
+.success-text{
+    color: white
+}
+
+.svg-inline--fa{
+    display: inline-block;
+    font-size: inherit;
+    height: 2.4em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.display-icon-lable{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.btn{
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 1em;
+    border: 0px;
+    border-radius: 10%;
+}
+
+.btn:hover{
+    opacity: 50%;
+}
+

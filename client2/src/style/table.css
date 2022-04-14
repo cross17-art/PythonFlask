@@ -1,0 +1,27 @@
+
+.table-div{
+/* background: #24243e; */
+margin: 25px;
+border-radius: 10px;
+}
+
+table{
+border-collapse: collapse;
+margin: auto;
+margin-top: auto;
+width: 100%;
+margin-top: 36px;
+color: white;
+padding: 10px;
+}
+th{
+    border-bottom: red;
+}
+thead{
+    border-bottom: 2px solid;
+    font-size: 1.5em;
+}
+tbody{
+    font-size: 1.2em;
+    color:#c0bdbd;
+}
